@@ -1,0 +1,424 @@
+/* <-------------------DESKTOP VIEW-------------------> */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Lato', sans-serif;
+    background-color: #efefef;
+ 
+}
+
+img{
+    max-width: 100%;
+}
+/* ......................Header Section........................ */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #24252a;
+    padding-left: 1em;
+    padding-right: 1em;
+    position: fixed;
+    width:100%;
+}
+ul.sidenav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff; 
+    padding:1.5em;
+  
+}
+li{
+    list-style-type: none;
+}
+li a{
+  color: #ffff;  
+  text-decoration: none;
+  font-size: 20px;
+ padding: 2em;
+}
+li a:hover{
+ color: #e1bd2c;
+}
+.profile{
+    border: 2px solid #24252a;
+    border-radius: 50%;
+}
+a.logo{
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+     
+}
+a h1{
+    font-size: 35px;
+}
+span{
+color:#e1bd2c
+}
+img#menu{
+    display: none;
+}
+
+/* <------------------Hero Section----------------> */
+.hero-section{
+    background: url(./Assets/hero-background.gif);
+}
+.hero-section{
+     display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+ .hero-text{
+    padding-left: 3em;
+    padding-bottom: 5em;
+      
+ }
+.hero-text p.name{
+    font-size: 30px;
+    color: white;
+    padding-top: 5em;
+  
+}
+.dynamic-text marquee {
+    font-size: 40px;
+    margin-top: 1em;
+    color:#e1bd2c;
+    
+}
+p.text{
+    color:white;
+    font-size:25px;
+    width: 55%;
+    line-height: 50px;
+}
+button{
+    padding: 10px;
+    margin-top: 2em;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #e1bd2c;
+    border:none;
+  
+}
+button a{
+    text-decoration: none;
+    color:black;
+}
+button:hover{
+    background-color: white;
+    color: black;
+    transform: 3s;
+}
+.hero-image{
+    padding-right: 3em;
+    max-width: 200%;
+    padding-top: 3em;
+}
+.hero-image img{
+    border:5px solid #e1bd2c;
+    border-radius: 5px;
+    box-shadow:2px 2px 2px 2px  white;
+    outline: none;
+}
+/* <------------------About Page Section----------------> */
+.aboutme-section h3{
+    font-size: 30px;
+    text-align:center;
+    color:#000;
+    margin-top: 1em;
+}
+ .aboutme{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  
+ }
+ .aboutme img{
+    border-right: 2px solid #e1bd2c;
+ }
+.aboutme-section p{
+    color:black;
+    font-size:20px;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 0;
+    margin-top: 0;
+    line-height: 50px;
+    transition: ease-in 1s;
+
+}
+.aboutme p{
+    text-align:justify;
+}
+/* <------------------Skills Section----------------> */
+.skills-tools h3{
+    font-size: 30px;
+    text-align:center;
+    color:#000;
+    margin-top: 1em;
+}
+p.technologies{
+    font-size: 25px;
+    color:black;
+    text-align: center;
+    padding-top: 1em;
+}
+.tools{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 2em;
+    transition: ease-out 2s;
+
+}
+    
+img.skill:hover{
+ background: white;
+ transition:ease-in-out 2s;
+ padding: 2em;
+}
+img.boot{
+    margin-right:10em;
+}
+img.react{
+    margin-right: 5em;
+}
+/* <------------------Project Section----------------> */
+.project{
+    background: #000;
+    
+}
+.project h3{
+    color: white;
+    padding-top: 2em;
+}
+.project p{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 1em;
+    color:white;
+}
+.project1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+}
+.project1-text p{
+    text-align: left;
+    width:80%;
+    margin-left: 5em;
+    line-height: 40px;  
+}
+.project1-text{
+   text-align: center;
+}
+/* <------------------Contact Section----------------> */
+.touch{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto 2em;
+}
+.touch-left p{
+    font-size: 20px;
+    text-align: left;
+    padding: 3em;
+    line-height:40px;
+    /* width:80%; */
+}
+form{
+    padding:1em;
+    
+}
+
+form input, textarea{
+    padding:1em;
+    border: 2px solid #e1bd2c;
+    background:#efefef;
+    border-radius:5px;
+    width: 350px;
+}
+.input_field,.btn{
+    padding-top:2em;
+
+ }
+ .btn input{
+    background-color:#e1bd2c;
+    cursor:pointer;
+    font-weight:bold;
+ }
+input.snd{
+    background: #e1bd2c;
+    border-radius:5px;
+    cursor:pointer;
+    border:none;
+    font-weight: bold;
+    padding:1em;
+}
+#error_message{
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+.socials{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    font-size:40px;
+    
+  
+}
+.socials a{
+    text-decoration: none;
+      color:#e1bd2c;
+      box-shadow: 2px 2px 2px solid white;
+}
+.socials a:hover{
+    color:black;
+}
+.copyright{
+    margin-top:3em;
+}
+.copyright p{
+    background-color: #000;
+    text-align:center;
+    color:#fff;
+    padding:1em;
+
+}
+
+
+/* <--------------------MOBILE VIEW -------------------> */
+@media screen and (max-width: 768px) {
+body {
+    overflow-x: hidden;
+   }
+   /* ...........................Header section--------------- */
+img#menu{
+    display: block;
+    cursor: pointer;
+    width: 40px;
+    position: absolute;
+    z-index: 3;
+    right: 20px;
+    top:-50px;
+    margin-top: 50px;
+
+ }
+ul.sidenav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 0;
+    position: absolute;
+    color: black;
+    top: 35px;
+    background-color: #24252a;
+    width: 250px;
+    right: 0;
+    height: 80vh;
+   }
+a h1{
+    font-size: 30px;
+  }
+ /* ------------Hero Section------------- */
+ .hero-text p.name{
+    font-size: 20px;
+ }
+ .hero-text{
+    padding-left: 1em;
+ }
+ .hero-text h2{
+    font-size: 30px;
+    color: white;
+    padding: 1em;
+}
+.hero-section{
+    display: block;
+}
+p.text{
+    font-size: 18px;
+    width:auto;
+   
+}
+button a{
+    font-size: 15px;
+}
+.hero-image img{
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+/* .........................About Me Section........................ */
+.aboutme-section h3{
+    font-size: 30px;
+}
+.aboutme-section p{
+padding: .5em;
+font-size: 18px;
+align-items: center;
+justify-content: center;
+
+}
+.aboutme img{
+    border:none;
+}
+.dynamic-text marquee{
+    font-size: 22px;
+}
+ img.boot, img.react{
+    margin:0;
+}
+ 
+p.technologies{
+    font-size:20px;
+}
+ .aboutme{
+    display: block;
+ }
+
+ .tools{
+    flex-wrap: wrap;
+ }
+ .project1{
+    flex-direction:column;
+ }
+ .project1-text p{
+    text-align:center;
+    width:auto;
+    margin:0;
+    font-size:20px;
+ }
+ .touch-left p{
+    padding:0;
+    text-align: center;
+    margin:0;
+ }
+  .copyright p{
+    font-size:12px;
+  }
+  form input, textarea{
+    padding:1em;
+    border: 2px solid #e1bd2c;
+    background:#efefef;
+    border-radius:5px;
+    width: 250px;
+}
+ .touch{
+    flex-direction: column;
+    justify-content: center;
+ }
+}
+
+
